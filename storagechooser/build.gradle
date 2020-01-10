@@ -4,12 +4,11 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.codekidX'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
@@ -39,7 +38,7 @@ dependencies {
 task javadoc(type: Javadoc) {
     failOnError false
     source = android.sourceSets.main.java.sourceFiles
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
     classpath += configurations.compile
 }
 

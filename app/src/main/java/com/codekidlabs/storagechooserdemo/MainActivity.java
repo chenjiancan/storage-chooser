@@ -196,7 +196,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chooser = builder.build();
+                chooser = builder
+                        .showFoldersInGrid(true)  // No Effect
+                        .build();
                 chooser.setOnSelectListener(new StorageChooser.OnSelectListener() {
                     @Override
                     public void onSelect(String path) {

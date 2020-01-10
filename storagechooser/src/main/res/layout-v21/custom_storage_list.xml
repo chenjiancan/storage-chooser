@@ -66,6 +66,30 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/select_all_file_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="2dp"
+                android:layout_toStartOf="@+id/select_all_button"
+                android:layout_centerVertical="true"
+                android:background="@color/colorAccent"
+                android:text="All File"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/select_all_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorAccent"
+                android:text="All"
+                android:textColor="@android:color/white" />
+
         </RelativeLayout>
 
         <Button
@@ -82,7 +106,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
 
-        <ListView
+        <GridView
             android:id="@+id/storage_list_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,7 +114,9 @@
             android:layout_below="@id/custom_path_header"
             android:divider="@null"
             android:listSelector="@drawable/ripple"
-            android:longClickable="true" />
+            android:longClickable="true"
+            android:numColumns="5"
+            />
 
         <ProgressBar
             android:id="@+id/files_loader"
@@ -161,6 +187,20 @@
             android:layout_alignParentEnd="true"
             android:layout_margin="16dp"
             app:srcCompat="@drawable/ic_check_white_24dp"
+            android:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/multiple_selection_cancel_fab"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
             android:visibility="invisible" />
 
     </RelativeLayout>

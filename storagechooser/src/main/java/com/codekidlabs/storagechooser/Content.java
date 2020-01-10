@@ -18,6 +18,9 @@ public class Content {
     private String textfieldHintText = "Folder Name";
     private String textfieldErrorText = "Empty Folder Name";
 
+    private String selectAllLable = "Select All";
+    private String selectAllLableCancel = "Cancel";
+
 
     public String getSelectLabel() {
         return selectLabel;
@@ -105,5 +108,12 @@ public class Content {
 
     public void setTextfieldErrorText(String textfieldErrorText) {
         this.textfieldErrorText = textfieldErrorText;
+    }
+
+    public String getSelectAllLabel() {
+        return selectAllLable;
+    }
+    public String getSelectAllLableCancel() {
+        return selectAllLableCancel;
     }
 }

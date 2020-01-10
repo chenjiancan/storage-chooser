@@ -489,10 +489,12 @@ public class SecondaryChooserFragment extends android.app.DialogFragment {
         mSelectButton.setText(mContent.getSelectLabel());
         mCreateButton.setText(mContent.getCreateLabel());
         mSelectAllButton.setText(mContent.getSelectAllLabel());
+        mSelectAllFileButton.setText(mContent.getSelectAllFileLabel());
 
         // set colors
         mSelectButton.setTextColor(scheme[Theme.SEC_SELECT_LABEL_INDEX]);
         mSelectAllButton.setTextColor(scheme[Theme.SEC_SELECT_LABEL_INDEX]);
+        mSelectAllFileButton.setTextColor(scheme[Theme.SEC_SELECT_LABEL_INDEX]);
         mPathChosen.setTextColor(scheme[Theme.SEC_ADDRESS_TINT_INDEX]);
 
         // set addressbar typeface

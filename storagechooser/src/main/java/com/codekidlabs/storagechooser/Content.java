@@ -18,8 +18,8 @@ public class Content {
     private String textfieldHintText = "Folder Name";
     private String textfieldErrorText = "Empty Folder Name";
 
-    private String selectAllLable = "Select All";
-    private String selectAllLableCancel = "Cancel";
+    private String selectAllLabel = "All";
+    private String selectAllFileLabel = "All File";
 
 
     public String getSelectLabel() {
@@ -111,9 +111,20 @@ public class Content {
     }
 
     public String getSelectAllLabel() {
-        return selectAllLable;
+        return selectAllLabel;
     }
-    public String getSelectAllLableCancel() {
-        return selectAllLableCancel;
+
+    public String getSelectAllFileLabel() {
+        return selectAllFileLabel;
     }
+
+    public void setSelectAllLable(String label) {
+        selectAllLabel = label;
+    }
+
+
+    public void setSelectAllFileLabel(String label) {
+        selectAllFileLabel = label;
+    }
+
 }
